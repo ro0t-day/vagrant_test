@@ -1,0 +1,24 @@
+---
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /etc/prometheus/
+    state: directory
+    mode: '0755'
+
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /prometheus
+    state: directory
+    mode: '0755'
+
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /var/lib/grafana
+    state: directory
+    mode: '0755'
+
+- name: Create a directory if it does not exist
+  ansible.builtin.file:
+    path: /etc/grafana/provisioning/
+    state: directory
+    mode: '0755'

@@ -1,0 +1,9 @@
+---
+- name: Copy compose project
+  ansible.builtin.copy:
+    src: "compose_project"
+    dest: "/etc/compose_project"
+    mode: 0755
+    owner: "docker"
+    group: "docker"
+    remote_src: true

@@ -1,0 +1,9 @@
+---
+- hosts: all
+  gather_facts: yes
+  become: true
+  roles:
+  #  - node_exporter
+    - ansible-role-docker
+  # - ansible-docker-systemd-service
+  #  - prometheus
